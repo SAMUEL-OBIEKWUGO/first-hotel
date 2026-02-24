@@ -5,22 +5,45 @@
 
 #navbar ul, #navbar ul li{
     float: none;
+    display: block;
 }
 
 #navbar ul li a{
-    padding: 5px;
+    padding: 10px 5px;
     border-bottom: #444 dotted 1px;
+    display: block;
 }
 
 /* Showcase */
 #showcase{
-    height: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-position: center top;
 }
 
 #showcase .showcase-content{
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding: 18px 14px;
+    text-align: center;
 }
+
+#showcase .showcase-content h1{
+    font-size: 28px;
+    line-height: 1.05;
+}
+
+#showcase .showcase-content p{
+    font-size: 16px;
+}
+
+.lead{
+    font-size: 18px;
+}
+
+/* Darken overlay slightly more on small screens for readability */
+#showcase::before{
+    background: rgba(0,0,0,0.6);
+}
+
 
 /* Home info */
 #home-info .info-img{
@@ -36,6 +59,32 @@
 .box{
     float: none;
     width: 100%;
+    padding: 16px 12px;
+}
+
+.box img{
+    max-width: 60px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.logo a{
+    font-size: 26px;
+    display: inline-block;
+    padding: 12px 0;
+}
+
+#main-footer{
+    padding: 14px 10px;
+    font-size: 14px;
 }
 
 /* About pages */
@@ -53,6 +102,6 @@
 }
 
 /* contact */
-#contact-info .box{
+#features .box{
     border-bottom: #444 dotted 1px;
 }
